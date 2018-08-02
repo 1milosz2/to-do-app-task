@@ -32,8 +32,9 @@ public class TodoEntryController {
                     String dueDate = sections[2];
                     service.addEntry(new TodoEntry(subject, dueDate));
                     System.out.println("New task added! So cool!");
+                } else {
+                    System.out.println("Invalid usage of ADD command");
                 }
-                System.out.println("Invalid usage of ADD command");
                 return true;
             case "EXIT":
                 System.out.println("Bye!");
