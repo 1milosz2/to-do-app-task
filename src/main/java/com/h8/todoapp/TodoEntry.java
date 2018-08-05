@@ -1,7 +1,5 @@
 package com.h8.todoapp;
 
-import java.time.LocalDate;
-
 public class TodoEntry {
 
     private final String subject;

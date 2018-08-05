@@ -2,7 +2,7 @@ package com.h8.todoapp;
 
 public class TodoEntryController {
 
-    private TodoEntryService service;
+     private TodoEntryService service;
 
     public TodoEntryController(TodoEntryService service) {
         this.service = service;
