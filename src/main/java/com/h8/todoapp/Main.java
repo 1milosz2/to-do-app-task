@@ -10,8 +10,8 @@ public class Main {
     public static void main(String... args) {
         if (System.console() != null) {
             Injector injector = Guice.createInjector(new ToDoEntryControllerModule());
-//            TodoEntryRepository repository = injector.getInstance(TodoEntryRepository.class);
-            TodoEntryRepository repository = new TodoEntryRepository();
+            TodoEntryRepository repository = injector.getInstance(TodoEntryRepository.class);
+//            TodoEntryRepository repository = new TodoEntryRepository();
             TodoEntryService service = new TodoEntryService(repository);
             TodoEntryController controller = new TodoEntryController(service);
 //            TodoEntryController controller = injector.getInstance(TodoEntryController.class);
