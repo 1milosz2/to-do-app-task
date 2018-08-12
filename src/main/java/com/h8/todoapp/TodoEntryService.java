@@ -1,16 +1,17 @@
 package com.h8.todoapp;
 
+import com.google.inject.Inject;
+
 import java.util.List;
 
 public class TodoEntryService {
 
     private TodoEntryRepository repository;
 
-//    @Inject
+    @Inject
     public TodoEntryService(TodoEntryRepository repository) {
         this.repository = repository;
     }
-
 
     public void addEntry(TodoEntry entry) {
         repository.save(entry);

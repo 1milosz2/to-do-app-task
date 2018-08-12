@@ -1,9 +1,12 @@
 package com.h8.todoapp;
 
+import com.google.inject.Inject;
+
 public class TodoEntryController {
 
-     private TodoEntryService service;
+    private TodoEntryService service;
 
+    @Inject
     public TodoEntryController(TodoEntryService service) {
         this.service = service;
     }

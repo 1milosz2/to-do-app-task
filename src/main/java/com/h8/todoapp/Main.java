@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String... args) {
         if (System.console() != null) {
-            Injector injector = Guice.createInjector(new ToDoEntryControllerModule());
+            Injector injector = Guice.createInjector();
             TodoEntryController controller = injector.getInstance(TodoEntryController.class);
             while (controller.readCommand());
         } else {
